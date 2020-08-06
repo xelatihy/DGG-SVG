@@ -81,7 +81,7 @@ void CPreviousCH::ClearContainers()
 }
 
 
-void CPreviousCH::AddIntoQueueOfPseudoSources(QuoteInfoAtVertex& quoteOfPseudoSource)
+void CPreviousCH::AddIntoQueueOfPseudoSources(const QuoteInfoAtVertex& quoteOfPseudoSource)
 {
 	m_QueueForPseudoSources.push(quoteOfPseudoSource);
 }

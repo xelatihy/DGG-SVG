@@ -36,9 +36,9 @@ void CSVG::ExecuteLocally_SVG(double distThreshold, set<int> &fixedDests, int ma
 		nMaxLenOfWindowQueue = 0;
 		depthOfResultingTree = 0;
 		InitContainers();
-		nTotalMilliSeconds = GetTickCount();
+		// nTotalMilliSeconds = GetTickCount(); // TODO(fabio): chrono
 		BuildSequenceTree_SVG(distThreshold, fixedDests, max_covered_points);
-		nTotalMilliSeconds = GetTickCount() - nTotalMilliSeconds;
+		// nTotalMilliSeconds = GetTickCount() - nTotalMilliSeconds; // TODO(fabio): chrono
 		//FillExperimentalResults();
 		ClearContainers();
 

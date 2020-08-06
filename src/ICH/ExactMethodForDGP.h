@@ -5,10 +5,9 @@
 #if !defined(AFX_EXACTMETHODFORDGP_H__2D7CA115_02A8_4808_838A_AE74834C0D93__INCLUDED_)
 #define AFX_EXACTMETHODFORDGP_H__2D7CA115_02A8_4808_838A_AE74834C0D93__INCLUDED_
 
-#if _MSC_VER > 1000
-#pragma once
-#endif // _MSC_VER > 1000
 #include "RichModel.h"
+
+#include <cfloat>
 
 
 struct IntersectionWithPath

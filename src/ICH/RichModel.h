@@ -407,7 +407,7 @@ CPoint3D CRichModel::ComputeShiftPoint(int indexOfVert, double factor) const
 
 CPoint3D CRichModel::ComputeShiftPoint(const CPoint3D& pt, int simpleEdgeId,double factor = 1.0) const
 {
-	CPoint3D& normal = Normal(m_SimpleEdges[simpleEdgeId].v1)+Normal(m_SimpleEdges[simpleEdgeId].v2);
+	CPoint3D normal = Normal(m_SimpleEdges[simpleEdgeId].v1)+Normal(m_SimpleEdges[simpleEdgeId].v2);
 	return pt +  normal * RateOfNormalShift / m_scale * factor;
 }
 

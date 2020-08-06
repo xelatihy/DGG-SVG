@@ -5,11 +5,9 @@
 #ifndef _PREVIOUSCH_H
 #define _PREVIOUSCH_H
 
-#if _MSC_VER > 1000
-#pragma once
-#endif // _MSC_VER > 1000
-
 #include "ExactMethodForDGP.h"
+
+#include <cfloat>
 
 
 class CPreviousCH : public CExactMethodForDGP
@@ -69,7 +67,7 @@ protected:
 	virtual void InitContainers();
 	virtual void ClearContainers();	
 	virtual void BuildSequenceTree();
-	virtual void AddIntoQueueOfPseudoSources(QuoteInfoAtVertex& quoteOfPseudoSource);
+	virtual void AddIntoQueueOfPseudoSources(const QuoteInfoAtVertex& quoteOfPseudoSource);
 	virtual void AddIntoQueueOfWindows(QuoteWindow& quoteW);	
 	virtual bool UpdateTreeDepthBackWithChoice();
 	virtual bool CheckValidityOfWindow(Window& w);

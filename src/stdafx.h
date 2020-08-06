@@ -6,10 +6,10 @@
 #pragma once
 //#define _AFXDLL
 //#include <afx.h>
-#include <Windows.h>
+//#include <Windows.h>
 //#include "targetver.h"
 #include <stdio.h>
-#include <tchar.h>
+//#include <tchar.h>
 
 #define _USE_MATH_DEFINES
 #include <math.h>
@@ -27,7 +27,7 @@
 #include <iostream>
 #include <string>
 #include <cassert>
-#include <omp.h>
+//#include <omp.h>
 #include <iomanip>
 
 

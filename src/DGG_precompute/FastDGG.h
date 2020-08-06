@@ -7,7 +7,7 @@
 #if _MSC_VER > 1000
 #pragma once
 #endif // _MSC_VER > 1000
-#include "ICH\PreviousCH.h"
+#include "ICH/PreviousCH.h"
 #include <queue>
 #include <set>
 
@@ -21,7 +21,7 @@ protected:
 	std::priority_queue<QuoteInfoAtVertex> m_QueueForPseudoSources;
 protected:
 	inline double GetMinDisOfWindow(const Window& w) const;
-	inline void AddIntoQueueOfPseudoSources(QuoteInfoAtVertex& quoteOfPseudoSource);
+	inline void AddIntoQueueOfPseudoSources(const QuoteInfoAtVertex& quoteOfPseudoSource);
 	inline void AddIntoQueueOfWindows(QuoteWindow& quoteW);
 	inline bool UpdateTreeDepthBackWithChoice();
 
@@ -69,7 +69,7 @@ double CFastDGG::GetMinDisOfWindow(const Window& w) const
 	return w.disToRoot - w.yUponUnfolding;
 }
 
-void CFastDGG::AddIntoQueueOfPseudoSources(QuoteInfoAtVertex& quoteOfPseudoSource)
+void CFastDGG::AddIntoQueueOfPseudoSources(const QuoteInfoAtVertex& quoteOfPseudoSource)
 {
 	m_QueueForPseudoSources.push(quoteOfPseudoSource);
 }

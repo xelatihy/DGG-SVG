@@ -331,9 +331,9 @@ void CExactMethodForDGP::Execute()
 		nMaxLenOfWindowQueue = 0;
 		depthOfResultingTree = 0;
 		InitContainers();
-		nTotalMilliSeconds = GetTickCount();	
+		// nTotalMilliSeconds = GetTickCount();	// TODO(fabio): chrono
 		BuildSequenceTree();
-		nTotalMilliSeconds = GetTickCount() - nTotalMilliSeconds;
+		// nTotalMilliSeconds = GetTickCount() - nTotalMilliSeconds; // TODO(fabio): chrono
 		//FillExperimentalResults();
 		ClearContainers();
 		
